@@ -1,16 +1,26 @@
 # flutter_notify_test
 
-A new Flutter project.
+## Receive Method
 
-## Getting Started
+👉 topic
 
-This project is a starting point for a Flutter application.
+トピック「test」のサブスクライブ
 
-A few resources to get you started if this is your first Flutter project:
+## Sender Code
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```python
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import messaging
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+cred = credentials.Certificate("server/firebase-adminsdk.json")
+firebase_admin.initialize_app(cred)
+
+message = messaging.Message(
+data={"score": "850", "time": "2:45"},
+topic="test",
+)
+
+response = messaging.send(message)
+print("Successfully sent message:", response)
+```
