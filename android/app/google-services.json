@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93278819338",
+    "project_id": "disaster-notify",
+    "storage_bucket": "disaster-notify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93278819338:android:73748faa955a2c41073bf3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_notify_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1kKdRasd8bcDKxQIuFN6wfh25jofLTkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
